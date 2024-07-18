@@ -3,348 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="..\..\assets\image\logo\logonibai.jpg"
+      type="image/x-icon"
+    />
     <title>NBAI</title>
 
-    <link rel="stylesheet" href="assets\style\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="..\..\assets\style\heroSelect.css" />
   </head>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-      cursor: default;
-    }
-
-    body {
-      background-color: black;
-    }
-
-    .loader {
-      width: 250px;
-      position: absolute;
-      font-size: 50px;
-      font-weight: 900;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      user-select: none;
-    }
-
-    .loader span {
-      transition: all 0.3s ease-in-out;
-    }
-
-    .loader span:nth-child(1) {
-      color: #17408b;
-      position: relative;
-      top: 0px;
-      animation: a 0.3s 0s infinite alternate-reverse;
-    }
-
-    @keyframes a {
-      from {
-        top: 0px;
-      }
-      to {
-        top: -20px;
-      }
-    }
-
-    .loader span:nth-child(2) {
-      color: #c9082a;
-      position: relative;
-      top: 0px;
-      animation: b 0.3s 0.1s infinite alternate-reverse;
-    }
-
-    @keyframes b {
-      from {
-        top: 0px;
-      }
-      to {
-        top: -20px;
-      }
-    }
-
-    .loader span:nth-child(3) {
-      color: #17408b;
-      position: relative;
-      top: 0px;
-      animation: c 0.3s 0.2s infinite alternate-reverse;
-    }
-
-    @keyframes c {
-      from {
-        top: 0px;
-      }
-      to {
-        top: -20px;
-      }
-    }
-
-    .loader span:nth-child(4) {
-      color: #c9082a;
-      position: relative;
-      top: 0px;
-      animation: d 0.3s 0.3s infinite alternate-reverse;
-    }
-
-    @keyframes d {
-      from {
-        top: 0px;
-      }
-      to {
-        top: -20px;
-      }
-    }
-
-    .wrapper {
-      width: 100vw;
-      height: 100vh;
-    }
-
-    .slide {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-    }
-
-    .lside {
-      width: 50%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      background-color: #ffffff;
-      transition: all 0.7s 0.5s ease-in-out;
-      z-index: 1;
-    }
-
-    .rside {
-      width: 50%;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      background-color: #ffffff;
-      transition: all 0.7s 0.5s ease-in-out;
-      z-index: 1;
-    }
-
-    .logo {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .nbai {
-      -webkit-text-stroke-width: 4px;
-      -webkit-text-stroke-color: #fff;
-      font-weight: 900;
-      font-size: 400px;
-      color: #17408b;
-      animation: nbai 0.5s 4.5s linear forwards;
-      line-height: 0.4;
-      padding-top: 170px;
-      text-shadow: 0 5px 5px #000;
-      visibility: hidden;
-      user-select: none;
-    }
-
-    @keyframes nbai {
-      0% {
-        opacity: 0;
-        transform: scale(5);
-        visibility: visible;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    .int {
-      font-weight: 900;
-      font-size: 100px;
-      color: #fff;
-      text-shadow: 0 5px 5px #000;
-      animation: int 0.3s 5s linear forwards;
-      visibility: hidden;
-      user-select: none;
-    }
-
-    @keyframes int {
-      0% {
-        opacity: 0;
-        transform: scale(3);
-        visibility: visible;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    .enter {
-      width: 200px;
-      height: 40px;
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation: ent 1s 5.5s linear forwards;
-      opacity: 0;
-      user-select: none;
-    }
-
-    @keyframes ent {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .ent {
-      width: 200px;
-      height: 40px;
-      text-transform: uppercase;
-      background-color: #c9082a;
-      color: #fff;
-      border: none;
-      font-size: 15px;
-      letter-spacing: 3px;
-      font-weight: 800;
-      transition: all 0.3s;
-    }
-
-    .ent:after {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border: 1.5px solid #ffffff00;
-      bottom: -8px;
-      content: " ";
-      display: block;
-      margin: 0 auto;
-      position: relative;
-      -webkit-transition: all 180ms ease-in-out;
-      transition: all 180ms ease-in-out;
-      width: 0;
-    }
-
-    .ent:hover:after {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      border-color: #fff;
-      -webkit-transition: width 250ms ease-in-out;
-      transition: width 250ms ease-in-out;
-      width: 198px;
-    }
-
-    .ent:hover:before {
-      bottom: -10px;
-      width: 100%;
-    }
-
-    .ent:hover {
-      background-color: #ff000057;
-      color: #fff;
-      font-size: 18px;
-    }
-
-    .background {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      overflow: hidden;
-      z-index: -1;
-      background-color: #000;
-    }
-
-    .backgroundvideo {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      mix-blend-mode: lighten;
-    }
-  </style>
   <body>
-    <div class="container">
-      <div class="wrapper">
+    <div class="heroes-container">
+      <div class="heroes-wrapper">
         <div class="slide">
           <div class="lside"></div>
           <div class="rside"></div>
         </div>
-        <div class="logo delayed-animation">
-          <h1 class="nbai delayed">NBAI</h1>
-          <h1 class="int">INTERNATIONAL</h1>
+        <div class="heroes">
+          <span
+            data-active="../../assets/image/characters/character001/joemel02.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character002/jim02.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character003/gab01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character004/maykol01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character005/marvin01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character006/ronald01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character007/edward01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character008/jonass01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character009/xander01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character010/neil01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character011/gabo01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character012/ryan01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character013/charlie01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character014/vergel01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span
+            data-active="../../assets/image/characters/character015/jeco01.png"
+            ><div class="overlay"></div
+          ></span>
+          <span data-active="../../assets/image/logo/logonibai01.png"></span>
         </div>
-        <div class="enter">
-          <button class="ent">Enter</button>
+        <div class="heroCharacter">
+          <h2 class="name"></h2>
+          <p class="role"></p>
+          <div class="hero"></div>
+          <div class="effects">
+            <div class="heroBackground"></div>
+          </div>
         </div>
+        <h1>CHOOSE YOUR BAI</h1>
+        <button class="select">select</button>
+        <button class="back">BACKBAI</button>
       </div>
-      <div class="background">
-        <video
-          src="https://assets.mixkit.co/videos/preview/mixkit-mirror-effect-of-flames-burning-on-a-black-background-3767-large.mp4"
-          autoplay
-          muted
-          loop
-          class="backgroundvideo"
-        ></video>
-      </div>
+      <div class="heroes-background"></div>
+      <div class="heroes-overlay"></div>
     </div>
 
-    <div class="loader">
-      <span>N</span>
-      <span>B</span>
-      <span>A</span>
-      <span>I</span>
-    </div>
-
-    <script>
-      let loader = document.querySelector(".loader");
-      let enter = document.querySelector(".ent");
-      let logo = document.querySelector(".logo");
-      let background = document.querySelector(".background");
-
-      let lside = document.querySelector(".lside");
-      let rside = document.querySelector(".rside");
-
-      document.addEventListener("DOMContentLoaded", () => {
-        setTimeout(removeLoader, 2000);
-      });
-
-      function removeLoader() {
-        if (loader) {
-          loader.style.transition = "opacity 1s ease-out";
-          loader.style.opacity = 0;
-
-          setTimeout(() => {
-            loader.remove();
-            lside.style.width = "0";
-            rside.style.width = "0";
-          }, 500);
-        }
-      }
-
-      enter.addEventListener("click", () => {
-        lside.style.width = "50%";
-        rside.style.width = "50%";
-
-        setTimeout(() => {
-          lside.style.width = "0";
-          rside.style.width = "0";
-          logo.remove();
-          enter.remove();
-          background.remove();
-        }, 1200);
-      });
-    </script>
+    <script src="..\..\assets\js\heroSelect.js"></script>
   </body>
 </html>

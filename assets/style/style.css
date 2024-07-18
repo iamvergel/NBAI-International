@@ -7,8 +7,6 @@
 }
 
 body {
-  width: 80%;
-  height: 50%;
   background-color: black;
 }
 
@@ -22,9 +20,13 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader span {
+  margin-inline: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -39,7 +41,6 @@ body {
   from {
     top: 0px;
   }
-
   to {
     top: -20px;
   }
@@ -56,7 +57,6 @@ body {
   from {
     top: 0px;
   }
-
   to {
     top: -20px;
   }
@@ -73,7 +73,6 @@ body {
   from {
     top: 0px;
   }
-
   to {
     top: -20px;
   }
@@ -90,7 +89,6 @@ body {
   from {
     top: 0px;
   }
-
   to {
     top: -20px;
   }
@@ -99,7 +97,6 @@ body {
 .wrapper {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 .slide {
@@ -156,7 +153,6 @@ body {
     transform: scale(5);
     visibility: visible;
   }
-
   100% {
     transform: scale(1);
     opacity: 1;
@@ -180,7 +176,6 @@ body {
     transform: scale(3);
     visibility: visible;
   }
-
   100% {
     transform: scale(1);
     opacity: 1;
@@ -204,7 +199,6 @@ body {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -278,339 +272,7 @@ body {
   mix-blend-mode: lighten;
 }
 
-.heroes-container {
-  width: 100vw;
-  height: 100vh;
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-}
-
-.heroes-background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  z-index: -1;
-  background-image: url("assets/image/background_image/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  filter: grayscale(100%);
-}
-
-.heroes-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  position: absolute;
-  top: 0;
-  opacity: 0.8;
-  z-index: -1;
-}
-
-.heroes-wrapper {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.heroes-wrapper h1 {
-  padding-top: 20px;
-  border-top: 5px solid #fff;
-  color: #c9082a;
-  font-family: "Anta", sans-serif;
-  font-size: 70px;
-  font-weight: 900;
-  font-style: normal;
-  position: absolute;
-  top: 85%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  user-select: none;
-  animation: changecolor 1s 0.5s linear infinite alternate-reverse;
-}
-
-@keyframes changecolor {
-  0% {
-    color: #c9082a;
-  }
-
-  100% {
-    color: #ff0000;
-  }
-}
-
-.heroes {
-  position: absolute;
-  left: 80%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 30px;
-  user-select: none;
-}
-
-.heroes span {
-  background-image: url("/../assets/image/logo/logonibai.jpg");
-  width: 100px;
-  height: 100px;
-  background-size: 100px 100px;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  border: 1px solid #fff;
-  transition: transform 0.2s ease;
-}
-
-.heroes span:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 5px 0 #fff;
-  border: solid 2px #fff;
-}
-
-.heroes span div {
-  background-color: #17408b;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: overlay;
-  opacity: 0.3;
-  transition: all 0.2s ease;
-}
-
-.heroes span div:hover {
-  background: none;
-}
-
-.heroes span:nth-child(1) {
-  background-image: url("/../assets/image/characters/character001/joemel.jpg");
-}
-
-.heroes span:nth-child(2) {
-  background-image: url("/../assets/image/characters/character002/jim.jpg");
-}
-
-.heroes span:nth-child(3) {
-  background-image: url("/../assets/image/characters/character003/gab.jpg");
-}
-
-.heroes span:nth-child(4) {
-  background-image: url("/../assets/image/characters/character004/maykol.jpg");
-}
-
-.heroes span:nth-child(5) {
-  background-image: url("/../assets/image/characters/character005/marvin.jpg");
-}
-
-.heroes span:nth-child(6) {
-  background-image: url("/../assets/image/characters/character006/ronald.jpg");
-}
-
-.heroes span:nth-child(7) {
-  background-image: url("/../assets/image/characters/character007/edward.jpg");
-}
-
-.heroes span:nth-child(8) {
-  background-image: url("/../assets/image/characters/character008/jonass.jpg");
-}
-
-.heroes span:nth-child(9) {
-  background-image: url("/../assets/image/characters/character009/xander.jpg");
-}
-
-.heroes span:nth-child(10) {
-  background-image: url("/../assets/image/characters/character010/neil.jpg");
-}
-
-.heroes span:nth-child(11) {
-  background-image: url("/../assets/image/characters/character011/gabo.jpg");
-}
-
-.heroes span:nth-child(12) {
-  background-image: url("/../assets/image/characters/character012/ryan.jpg");
-}
-
-.heroes span:nth-child(13) {
-  background-image: url("/../assets/image/characters/character013/charlie.jpg");
-}
-
-.heroes span:nth-child(14) {
-  background-image: url("/../assets/image/characters/character014/vergel.jpg");
-}
-
-.heroes span:nth-child(15) {
-  background-image: url("/../assets/image/characters/character015/jeco.jpg");
-}
-
-.hero {
-  width: 300px;
-  height: 400px;
-  position: absolute;
-  top: 44%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  background-size: cover;
-  z-index: 1;
-}
-
-.hero.fade-in {
-  animation: fadein 0.2s ease;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.name {
-  color: #fff;
-  position: absolute;
-  left: 31%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "anta", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  user-select: none;
-  letter-spacing: 3px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  font-size: 200px;
-}
-
-.role {
-  color: #c9082a;
-  font-size: 15px;
-  position: absolute;
-  left: 18%;
-  top: 35%;
-  transform: translate(-50%, -50%);
-  font-family: "anta", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  user-select: none;
-  letter-spacing: 3px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.back {
-  width: 200px;
-  height: 30px;
-  text-transform: uppercase;
-  background-color: #c9082a;
-  color: #fff;
-  border: none;
-  font-size: 15px;
-  letter-spacing: 3px;
-  font-weight: 800;
-  transition: all 0.3s;
-  position: absolute;
-  bottom: 15px;
-  right: 130px;
-}
-
-.back:after {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1.5px solid #ffffff00;
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: all 180ms ease-in-out;
-  transition: all 180ms ease-in-out;
-  width: 0;
-}
-
-.back:hover:after {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-color: #fff;
-  -webkit-transition: width 250ms ease-in-out;
-  transition: width 250ms ease-in-out;
-  width: 198px;
-}
-
-.back:hover:before {
-  bottom: 10px;
-  width: 100%;
-}
-
-.back:hover {
-  background-color: #ff0000;
-  color: #fff;
-  font-size: 18px;
-}
-
-.back:active {
-  background-color: #17408b;
-}
-
-.select {
-  width: 200px;
-  height: 30px;
-  text-transform: uppercase;
-  background-color: #c9082a;
-  color: #fff;
-  border: none;
-  font-size: 15px;
-  letter-spacing: 3px;
-  font-weight: 800;
-  transition: all 0.3s;
-  position: absolute;
-  bottom: 15px;
-  right: 400px;
-}
-
-.select:after {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border: 1.5px solid #ffffff00;
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: all 180ms ease-in-out;
-  transition: all 180ms ease-in-out;
-  width: 0;
-}
-
-.select:hover:after {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-color: #fff;
-  -webkit-transition: width 250ms ease-in-out;
-  transition: width 250ms ease-in-out;
-  width: 198px;
-}
-
-.select:hover:before {
-  bottom: 10px;
-  width: 100%;
-}
-
-.select:hover {
-  background-color: #ff0000;
-  color: #fff;
-  font-size: 18px;
-}
-
-.select:active {
-  background-color: #17408b;
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   .loader {
     width: 100%;
     font-size: 40px;
@@ -618,20 +280,21 @@ body {
   }
 
   .nbai {
-    font-size: 150px;
+    font-size: 120px;
     -webkit-text-stroke-width: 0;
     padding-top: 250px;
+    line-height: 1;
   }
 
   .int {
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .enter {
     width: 150px;
     height: 30px;
-    top: 60%;
+    top: 70%;
     left: 50%;
   }
 
@@ -643,104 +306,5 @@ body {
 
   .ent:hover:after {
     width: 148px;
-  }
-
-  .heroes {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 87%;
-    height: 80px;
-    display: inline;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    overflow: none;
-  }
-
-  .heroes span {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    margin-right: 5px;
-    margin-top: 5px;
-    background-size: 70px 70px;
-  }
-
-  .heroes span:nth-child(1) {
-    margin-left: 5px;
-  }
-
-  .hero {
-    width: 250px;
-    height: 350px;
-    position: absolute;
-    top: 34.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    background-size: cover;
-    z-index: 1;
-  }
-
-  .back {
-    position: absolute;
-    top: 93%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 30px;
-    font-size: 12px;
-  }
-
-  .back:hover:after {
-    width: 147px;
-  }
-
-  .back:hover:after {
-    width: 98px;
-  }
-
-  .select {
-    position: absolute;
-    top: 93%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 30px;
-    font-size: 12px;
-  }
-
-  .select:hover:after {
-    width: 147px;
-  }
-
-  .select:hover:after {
-    width: 98px;
-  }
-
-  .heroes-wrapper h1 {
-    width: 250px;
-    padding-top: 20px;
-    border-top: 3px solid #fff;
-    font-size: 30px;
-    top: 65%;
-    left: 50%;
-    text-align: center;
-  }
-
-  .name {
-    left: 50%;
-    top: 25%;
-    font-size: 100px;
-    letter-spacing: 3px;
-  }
-
-  .role {
-    font-size: 10px;
-    left: 20%;
-    top: 18%;
-    letter-spacing: 3px;
   }
 }

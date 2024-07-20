@@ -261,15 +261,19 @@ body {
   z-index: 5;
 }
 
+.roleContainer {
+  width: 35%;
+  z-index: 5;
+  padding-left: 1rem;
+  position: absolute;
+  left: 20px;
+  bottom: 27%;
+  transition: opacity 0.2s ease;
+}
+
 .role {
   color: #c9082a;
-  background-color: #fff;
-  padding-inline: 1rem;
   font-size: 15px;
-  position: absolute;
-  left: 20%;
-  bottom: 27%;
-  transform: translate(-50%, -50%);
   font-family: "anta", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -277,7 +281,6 @@ body {
   letter-spacing: 3px;
   opacity: 0;
   transition: opacity 0.2s ease;
-  z-index: 5;
 }
 
 .effects {
@@ -530,16 +533,28 @@ body {
     z-index: 5;
   }
 
+  .roleContainer {
+    width: 60%;
+    z-index: 5;
+    padding-left: 1rem;
+    position: absolute;
+    left: 10px;
+    bottom: 17%;
+    transition: opacity 0.2s ease;
+  }
+
   .role {
     color: #c9082a;
-    background-color: #fff;
-    padding-inline: 1rem;
-    font-size: 12px;
-    position: absolute;
-    left: 30%;
-    bottom: 15%;
-    transition: opacity 0.1s ease;
+    font-size: 10px;
+    font-family: "anta", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    user-select: none;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
+
   .backgroundImg {
     width: 100%;
     height: 100%;

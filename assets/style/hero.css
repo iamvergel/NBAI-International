@@ -78,7 +78,11 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: grayscale(100%) blur(3px);
+  filter: blur(3px);
+}
+
+.container .wrapper .background .overlay {
+  opacity: 0.5;
 }
 
 .container .wrapper .overlay {
@@ -103,6 +107,7 @@ body {
   top: 0;
   left: 0;
   animation: joemel 0.5s ease-in;
+  filter: brightness(1.2) contrast(1.2);
 }
 
 .container .wrapper .character img {
@@ -115,7 +120,7 @@ body {
 
 @keyframes nen {
   from {
-    filter: drop-shadow(0px 0px 0px #ffd64f);
+    filter: drop-shadow(0px 0px 0px #ff0000);
   }
   to {
     filter: drop-shadow(0px 0px 20px #ffd64f);
@@ -142,6 +147,36 @@ body {
   right: 0;
 }
 
+.container .wrapper .characterInfo .about h1 {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  font-weight: 700;
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
+.container .wrapper .characterInfo .about .history {
+  width: 100%;
+  height: 30%;
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  overflow-y: scroll;
+}
+
 .container .wrapper .characterInfo .skills {
   width: 100%;
   height: 15%;
@@ -153,12 +188,63 @@ body {
   padding-left: 2rem;
 }
 
+.container .wrapper .characterInfo .skills h1 {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  font-weight: 700;
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+
 .container .wrapper .characterInfo .skills div {
   width: 60px;
   height: 60px;
   background-color: #c9082a;
   border-radius: 50%;
   margin-inline: 1rem;
+  margin-top: 3rem;
+  border: 2px solid #fff;
+}
+
+.container .wrapper .characterInfo .skills .skillInfo {
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0;
+  margin-inline: 1rem;
+  margin-top: 3rem;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  font-size: 14px;
+  text-transform: capitalize;
+  overflow-y: scroll;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+}
+
+.container .wrapper .characterInfo .skills .skillInfo h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container .wrapper .characterInfo .skills .skillInfo h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container .wrapper .characterInfo .skills .skillInfo p {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-transform: capitalize;
 }
 
 .container .wrapper .characterInfo .information {
@@ -169,24 +255,213 @@ body {
 }
 
 .container .wrapper .characterInfo .information h3 {
-  color: #ffffff;
   font-size: 20px;
   font-weight: 900;
-  text-indent: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 6px 6px #00000080;
-  color: #c9082a;
+  color: #fff;
   line-height: 5;
 }
 
 .container .wrapper .characterInfo .information h1 {
+  text-shadow: -5px -5px 0 #c9082a, 5px -5px 0 #17408b, -5px 5px 0 #c9082a,
+    5px 5px 0 #17408b;
   color: #ffffff;
   font-size: 150px;
   font-weight: 900;
   text-indent: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 6px 6px #00000080;
   line-height: 0.5;
+}
+
+.back {
+  width: 200px;
+  height: 30px;
+  text-transform: uppercase;
+  background-color: #c9082a;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.back:after {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1.5px solid #ffffff00;
+  bottom: -4px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 180ms ease-in-out;
+  transition: all 180ms ease-in-out;
+  width: 0;
+}
+
+.back:hover:after {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+  width: 198px;
+}
+
+.back:hover:before {
+  bottom: -10px;
+  width: 100%;
+}
+
+.back:hover {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 18px;
+}
+
+.back:active {
+  background-color: #17408b;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: #000;
+    overflow: scroll;
+  }
+
+  .container {
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .container .wrapper .character {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: joemel 0.5s ease-in;
+    filter: brightness(1.2) contrast(1.2);
+  }
+
+  .container .wrapper .character img {
+    width: 360px;
+    height: auto;
+    bottom: 0;
+    animation: nen 0.6s 1s infinite;
+  }
+
+  .container .wrapper .characterInfo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container .wrapper .characterInfo .information {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .container .wrapper .characterInfo .information h3 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 6px 6px #00000080;
+    color: #fff;
+    line-height: 3;
+  }
+
+  .container .wrapper .characterInfo .information h1 {
+    text-shadow: -5px -5px 0 #c9082a, 5px -5px 0 #17408b, -5px 5px 0 #c9082a,
+      5px 5px 0 #17408b;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 0.5;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  .back {
+    width: 200px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: #c9082a;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    transition: all 0.3s;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .container .wrapper .characterInfo .about h1 {
+    margin-top: 750px;
+    margin-left: 1rem;
+  }
+
+  .container .wrapper .characterInfo .about .history {
+    margin-top: 750px;
+  }
+
+  .container .wrapper .characterInfo .skills h1 {
+    margin-top: 800px;
+    margin-left: 1rem;
+  }
+
+  .container .wrapper .characterInfo .skills div {
+    margin-inline: 0.5rem;
+    border: 2px solid #fff;
+    margin-top: 1700px;
+  }
+
+  .container .wrapper .characterInfo .skills .skillInfo {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 3rem;
+    border: none;
+    padding-left: 1rem;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-inline: 0.5rem;
+    margin-top: 2000px;
+  }
+
+  .container .wrapper .characterInfo .skills .skillInfo h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .container .wrapper .characterInfo .skills .skillInfo h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .container .wrapper .characterInfo .skills .skillInfo p {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
 }

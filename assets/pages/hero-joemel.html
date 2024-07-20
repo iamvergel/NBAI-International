@@ -36,9 +36,15 @@
 
         <div class="background">
           <img
-            src="..\..\assets\image\characters\character001\joemel01.jpg"
+            src="..\..\assets\image\background_image\joemelbg.jpg"
             alt="jom"
           />
+          <div class="overlay">
+            <img
+              src="https://i.pinimg.com/originals/ef/5e/4b/ef5e4b4d024c66b42311e337ae8ab4cc.gif"
+              alt="overlay"
+            />
+          </div>
         </div>
 
         <div class="overlay"></div>
@@ -51,13 +57,61 @@
         </div>
 
         <div class="characterInfo">
-          <div class="about"></div>
+          <div class="about">
+            <h1>about</h1>
+            <div class="history">
+              <p>
+                Joemel - The Eternal
+
+                <br />
+                <br />
+
+                Hashira Once one of the deadliest Hashira, Joemel lived over
+                five thousand years ago. He was a master of Stone Hardening and
+                Foil Breathing techniques, wielding them with unmatched skill.
+
+                <br />
+                <br />
+
+                Above all, Joemel possessed an extraordinary ability to adapt to
+                any battle, making him an unstoppable force in the fight against
+                darkness. His legendary prowess and adaptability have made him a
+                figure of myth and inspiration for generations of warriors.
+
+                <br />
+                <br />
+
+                Joemel was also an Imaginary Trapper, a skill he acquired from
+                his friend, Sivergel, who taught him this unique ability. This
+                rare technique allowed him to manipulate and trap his enemies in
+                powerful illusions, further solidifying his reputation as an
+                invincible warrior.
+
+                <br />
+                <br />
+
+                One of Joemel's most fearsome abilities was Battle Adaptation:
+                his capacity to learn and counter any opponent's fighting style,
+                turning their strengths against them. However, due to his lack
+                of full nen charge, Joemel was unable to fully utilize this
+                skill, making it a dormant potential within him. Despite this
+                limitation, his other abilities made him a formidable adversary.
+              </p>
+            </div>
+          </div>
           <div class="ability"></div>
           <div class="skills">
+            <h1>skills</h1>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
+
+            <div class="skillInfo">
+              <h3>Skill</h3>
+              <h4>skill name</h4>
+              <p>information</p>
+            </div>
           </div>
           <div class="information">
             <h3 id="role">fighter / tank</h3>
@@ -65,14 +119,51 @@
           </div>
           <div class="skin" id="skin"></div>
           <div class="button">
-            <button class="back" onclick="back()" style="position: absolute">
-              back
-            </button>
+            <button class="back" onclick="back()">back</button>
           </div>
         </div>
       </div>
     </div>
 
     <script src="..\..\assets\js\hero.js"></script>
+
+    <script>
+      let skiilOne = document.querySelector(".skills div:nth-of-type(1)");
+      let skiilTwo = document.querySelector(".skills div:nth-of-type(2)");
+      let skiilThree = document.querySelector(".skills div:nth-of-type(3)");
+      let passive = document.querySelector(".skills div:nth-of-type(4)");
+
+      let skill = document.querySelector(".skills .skillInfo h3");
+      let skillName = document.querySelector(".skills .skillInfo h4");
+      let skillInfo = document.querySelector(".skills .skillInfo p");
+
+      skiilOne.addEventListener("click", () => {
+        skill.innerHTML = "skill 1";
+        skillName.innerHTML = "Stone Hardening";
+        skillInfo.innerHTML =
+          "oemel could transform his body into an impenetrable stone, granting him incredible defense and devastating melee attacks.";
+      });
+
+      skiilTwo.addEventListener("click", () => {
+        skill.innerHTML = "skill 2";
+        skillName.innerHTML = "Foil Breathing";
+        skillInfo.innerHTML =
+          "This technique allowed Joemel to move with unparalleled speed and precision, striking with the swiftness and sharpness of a blade.";
+      });
+
+      skiilThree.addEventListener("click", () => {
+        skill.innerHTML = "skill 3";
+        skillName.innerHTML = "imagination trapper";
+        skillInfo.innerHTML =
+          "Taught by his friend vergel, this skill enabled Joemel to create and control illusions, trapping his enemies in a mental labyrinth from which there was no escape.";
+      });
+
+      passive.addEventListener("click", () => {
+        skill.innerHTML = "passive";
+        skillName.innerHTML = "energy booster";
+        skillInfo.innerHTML =
+          "Every 5 hits on an enemy, creep, or jungle monster, Joemel's attack speed increases, allowing him to strike more rapidly and overwhelm his foes with a flurry of attacks.";
+      });
+    </script>
   </body>
 </html>

@@ -242,6 +242,7 @@ window.addEventListener("resize", largeScreen);
 
 let select = document.querySelector(".select");
 let heroname = document.querySelector(".name");
+let roleContainer = document.querySelector(".roleContainer");
 let role = document.querySelector(".role");
 let effects = document.querySelector(".effects");
 let heroBackground = document.querySelector(".heroBackground");
@@ -287,11 +288,14 @@ joemel001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/joemelbg.jpg')";
   heroBackground.style.opacity = "0.5";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "fighter / tank";
   role.style.opacity = "1";
 });
 joemel001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -308,11 +312,14 @@ jim001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/jimbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "support";
   role.style.opacity = "1";
 });
 jim001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -329,11 +336,14 @@ gab001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/gabbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "tank / support";
   role.style.opacity = "1";
 });
 gab001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -350,11 +360,14 @@ maykel001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/maykelbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "marksman";
   role.style.opacity = "1";
 });
 maykel001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -371,11 +384,14 @@ marvin001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/marvinbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "assasin";
   role.style.opacity = "1";
 });
 marvin001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -392,11 +408,14 @@ ronald001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/ronaldbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "fighter";
   role.style.opacity = "1";
 });
 ronald001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -413,11 +432,14 @@ edward001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/edwardbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "tank";
   role.style.opacity = "1";
 });
 edward001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -434,11 +456,14 @@ jonas001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/jonasbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "fighter / assasin";
   role.style.opacity = "1";
 });
 jonas001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -455,11 +480,14 @@ xander001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/xanderbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "mage / marksman";
   role.style.opacity = "1";
 });
 xander001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -476,11 +504,14 @@ neil001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/neilbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "assasin / mage";
   role.style.opacity = "1";
 });
 neil001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -497,11 +528,14 @@ gabo001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/gabobg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "marksman / tank";
   role.style.opacity = "1";
 });
 gabo001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -518,11 +552,14 @@ ryan001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/ryanbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "tank / fighter";
   role.style.opacity = "1";
 });
 ryan001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -539,11 +576,14 @@ charlie001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/charliebg.webp')";
   heroBackground.style.opacity = "0.8";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "mage / support";
   role.style.opacity = "1";
 });
 charlie001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -560,11 +600,14 @@ vergel001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/vergelbg.jpg')";
   heroBackground.style.opacity = "0.7";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "fighter / tank";
   role.style.opacity = "1";
 });
 vergel001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
@@ -582,11 +625,14 @@ jeco001.addEventListener("mouseenter", () => {
     "url('../../assets/image/background_image/jecobg.jpg')";
   heroBackground.style.opacity = "0.9";
 
+  roleContainer.style.backgroundColor = "white";
+
   role.innerHTML = "tank / support";
   role.style.opacity = "1";
 });
 jeco001.addEventListener("mouseleave", () => {
   heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";

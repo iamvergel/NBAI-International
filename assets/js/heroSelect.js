@@ -26,7 +26,7 @@ back.addEventListener("click", () => {
   effects02();
 
   setTimeout(() => {
-    window.location.href = "http://127.0.0.1:5500/index.html";
+    window.location.href = "https://nbai-international.vercel.app/";
   }, 1500);
 });
 

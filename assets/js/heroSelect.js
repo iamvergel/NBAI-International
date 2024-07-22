@@ -26,7 +26,7 @@ back.addEventListener("click", () => {
   effects02();
 
   setTimeout(() => {
-    window.location.href = "https://nbai-international.vercel.app/";
+    window.location.href = "http://127.0.0.1:5500/index.html";
   }, 1500);
 });
 
@@ -103,16 +103,20 @@ function largeScreen() {
       }, 1000);
     });
 
-    /*
     jim001.addEventListener("click", () => {
-      lside.style.width = "50%";
-      rside.style.width = "50%";
-
       setTimeout(() => {
-        window.location.href = "assets/pages/hero-jimwel.html";
-      }, 1500);
+        lside.style.width = "50%";
+        rside.style.width = "50%";
+
+        effects01();
+
+        setTimeout(() => {
+          window.location.href = "../../assets/pages/hero-jimwel.html";
+        }, 2000);
+      }, 1000);
     });
 
+    /*
     gab001.addEventListener("click", () => {
       lside.style.width = "50%";
       rside.style.width = "50%";
@@ -274,6 +278,32 @@ select.addEventListener("click", () => {
         window.location.href = "../../assets/pages/hero-joemel.html";
       }, 1000);
     }, 500);
+  } else if (heroname.innerHTML === "JImwel") {
+    heroname.innerHTML = "jimwel";
+    heroname.style.opacity = "1";
+
+    effects.style.backgroundImage =
+      "url('https://cdn.dribbble.com/users/652916/screenshots/2033857/media/d3b47e7e94f6dc54fb1f4d2680298dd8.gif')";
+
+    heroBackground.style.backgroundImage =
+      "url('../../assets/image/background_image/jimbg.jpg')";
+    heroBackground.style.opacity = "0.7";
+
+    roleContainer.style.backgroundColor = "white";
+
+    role.innerHTML = "support";
+    role.style.opacity = "1";
+
+    setTimeout(() => {
+      lside.style.width = "50%";
+      rside.style.width = "50%";
+
+      effects01();
+
+      setTimeout(() => {
+        window.location.href = "../../assets/pages/hero-jimwel.html";
+      }, 2000);
+    }, 1000);
   }
 });
 

@@ -110,23 +110,6 @@ body {
   filter: brightness(1.2) contrast(1.2);
 }
 
-.container .wrapper .character img {
-  width: 450px;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  animation: nen 0.6s 1s infinite;
-}
-
-@keyframes nen {
-  from {
-    filter: drop-shadow(0px 0px 0px #ff0000);
-  }
-  to {
-    filter: drop-shadow(0px 0px 20px #ffd64f);
-  }
-}
-
 @keyframes joemel {
   from {
     top: 600px;

@@ -25,26 +25,192 @@
     />
 
     <link rel="stylesheet" href="..\..\assets\style\hero.css" />
+
+    <style>
+      .container .wrapper .character img {
+        width: 450px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        animation: nen 0.6s 1s infinite;
+      }
+
+      @keyframes nen {
+        from {
+          filter: drop-shadow(0px 0px 0px #53015a);
+        }
+        to {
+          filter: drop-shadow(0px 0px 20px #f700ff);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="loader">
-      <span>N</span>
-      <span>B</span>
-      <span>A</span>
-      <span>I</span>
-    </div>
-
     <div class="container">
       <div class="wrapper">
+        <div class="slide">
+          <div class="lside"></div>
+          <div class="rside"></div>
+        </div>
+
+        <div class="background">
+          <img src="..\..\assets\image\background_image\jimbg.jpg" alt="jom" />
+          <div class="overlay">
+            <img
+              src="https://cdn.dribbble.com/users/652916/screenshots/2033857/media/d3b47e7e94f6dc54fb1f4d2680298dd8.gif"
+              alt="overlay"
+            />
+          </div>
+        </div>
+
+        <div class="overlay"></div>
+
         <div class="character">
           <img
-            src="..\..\assets\image\characters\character002\jim02.png"
-            alt="jimwel"
+            src="..\..\assets\image\characters\character002\jIM02.png"
+            alt="joemel"
           />
+        </div>
+
+        <div class="characterInfo">
+          <div class="about">
+            <h1>about</h1>
+            <div class="history">
+              <p>
+                <strong>Jimwell - The Modern Hashira</strong>
+
+                <br />
+                <br />
+
+                In the present day, Jimwell stands as one of the most essential
+                Hashira, renowned not for his offensive prowess but for his
+                unparalleled support capabilities. He has mastered the ancient
+                and revered Water Breathing Technique, a skill passed down to
+                him by his father, who had learned it from an enigmatic and
+                legendary source—a mystical rooster said to possess unparalleled
+                wisdom and healing powers.
+
+                <br />
+                <br />
+
+                From a young age, Jimwell displayed a natural affinity for the
+                Water Breathing Technique. Under the rigorous training and
+                guidance of his father, he honed his abilities, focusing on the
+                supportive and restorative aspects of the art. Jimwell's journey
+                to becoming a top Hashira was marked by his compassionate nature
+                and his desire to aid and protect his comrades.
+
+                <br />
+                <br />
+
+                Driven by a relentless desire to enhance his healing abilities,
+                Jimwell ventured into the world of forbidden substances. These
+                illicit drugs, while taking a toll on his body, unlocked new
+                dimensions of his Water Breathing Technique. The heightened
+                state of awareness and perception induced by these substances
+                allowed him to perfect several advanced forms, achieving feats
+                that were previously deemed impossible in the realm of support.
+
+                <br />
+                <br />
+
+                Jimwell's reputation grew, and he soon became known as one of
+                the top ten strongest Hashira of the current era, not because of
+                his combat strength, but because of his unparalleled ability to
+                keep his allies alive and fighting. His mastery of the Water
+                Breathing Technique, coupled with the unconventional methods
+                that enhanced his skills, made him an indispensable asset in the
+                fight against demons. Despite the controversies surrounding his
+                methods, Jimwell's dedication to protecting humanity and his
+                fellow demon slayers remained unwavering.
+
+                <br />
+                <br />
+
+                In the demon-slaying corps, Jimwell's presence was both
+                cherished and admired. His fluid, almost dance-like movements in
+                battle were a sight to behold, as he seamlessly transitioned
+                between forms, providing crucial support to his allies while
+                hindering his enemies. His unique approach to combat and
+                unyielding spirit earned him the respect of his peers and the
+                admiration of those he swore to protect.
+
+                <br />
+                <br />
+
+                Jimwell's story is one of contrasts—a blend of ancient tradition
+                and modern extremes, a tale of a warrior who walked a perilous
+                path to achieve greatness. As he continues to fight on the front
+                lines, his legend grows, inspiring a new generation of demon
+                slayers to pursue excellence, no matter the cost.
+              </p>
+            </div>
+          </div>
+          <div class="ability"></div>
+          <div class="skills">
+            <h1>skills</h1>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div class="skillInfo">
+              <h3>Skill</h3>
+              <h4>skill name</h4>
+              <p>information</p>
+            </div>
+          </div>
+          <div class="information">
+            <h3 id="role">support</h3>
+            <h1 id="name">jimwel</h1>
+          </div>
+          <div class="skin" id="skin"></div>
+          <div class="button">
+            <button class="back" onclick="back()">back</button>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="..\..\assets\js\hero.js"></script>
+
+    <script>
+      let skiilOne = document.querySelector(".skills div:nth-of-type(1)");
+      let skiilTwo = document.querySelector(".skills div:nth-of-type(2)");
+      let skiilThree = document.querySelector(".skills div:nth-of-type(3)");
+      let passive = document.querySelector(".skills div:nth-of-type(4)");
+
+      let skill = document.querySelector(".skills .skillInfo h3");
+      let skillName = document.querySelector(".skills .skillInfo h4");
+      let skillInfo = document.querySelector(".skills .skillInfo p");
+
+      skiilOne.addEventListener("click", () => {
+        skill.innerHTML = "skill 1";
+        skillName.innerHTML = "Holy Water";
+        skillInfo.innerHTML =
+          "Jimwell channels his Water Breathing Technique to create a purifying stream of water that heals his allies. The mystical water cleanses wounds, restores stamina, and invigorates the spirits of those it touches.";
+      });
+
+      skiilTwo.addEventListener("click", () => {
+        skill.innerHTML = "skill 2";
+        skillName.innerHTML = "Water Gun";
+        skillInfo.innerHTML =
+          "Jimwell forms a high-pressure stream of water that he can control with precision. This stream can be directed to give allies a burst of movement speed, allowing them to maneuver swiftly across the battlefield. When aimed at enemies, it strikes with a forceful impact, knocking them back and disorienting them.";
+      });
+
+      skiilThree.addEventListener("click", () => {
+        skill.innerHTML = "skill 3";
+        skillName.innerHTML = "Tsunami Surge";
+        skillInfo.innerHTML =
+          "Jimwell summons a colossal wave that he and his teammates can ride. The wave surges forward, sweeping up allies to the top, allowing them to surf over obstacles and enemies. This tidal force crashes down upon foes, dealing massive damage and leaving a trail of chaos in its wake.";
+      });
+
+      passive.addEventListener("click", () => {
+        skill.innerHTML = "passive";
+        skillName.innerHTML = "Fluid Mastery";
+        skillInfo.innerHTML =
+          "Jimwell's continuous exposure to the forbidden substances has granted him an almost supernatural adaptability in combat. While walking, four types of water—black, green, clear, and blue—begin to circulate around his body, one by one, in a rotating sequence. Each type of water has a unique effect when hitting an enemy or being close to an ally: <br /><br /> Black Water: Deals damage to enemies. <br /> Green Water: Heals nearby allies. <br /> Clear Water: Restores Jimwell's mana. <br /> Blue Water: Stuns enemies upon contact. <br /><br /> As Jimwell continues to move and engage in combat, these waters cycle around him, adding strategic layers to his already formidable presence on the battlefield.";
+      });
+    </script>
   </body>
 </html>

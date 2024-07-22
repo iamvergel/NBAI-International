@@ -25,6 +25,25 @@
     />
 
     <link rel="stylesheet" href="..\..\assets\style\hero.css" />
+
+    <style>
+      .container .wrapper .character img {
+        width: 450px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        animation: nen 0.6s 1s infinite;
+      }
+
+      @keyframes nen {
+        from {
+          filter: drop-shadow(0px 0px 0px #ff0000);
+        }
+        to {
+          filter: drop-shadow(0px 0px 20px #ffd64f);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">

@@ -278,7 +278,7 @@ select.addEventListener("click", () => {
         window.location.href = "../../assets/pages/hero-joemel.html";
       }, 1000);
     }, 500);
-  } else if (heroname.innerHTML === "JImwel") {
+  } else if (heroname.innerHTML = "JIMWEL") {
     heroname.innerHTML = "jimwel";
     heroname.style.opacity = "1";
 

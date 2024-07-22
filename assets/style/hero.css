@@ -417,17 +417,18 @@ body {
 
   .container .wrapper .characterInfo .about .history {
     margin-top: 750px;
+    height: 500px;
   }
 
   .container .wrapper .characterInfo .skills h1 {
-    margin-top: 800px;
+    margin-top: 1050px;
     margin-left: 1rem;
   }
 
   .container .wrapper .characterInfo .skills div {
     margin-inline: 0.5rem;
     border: 2px solid #fff;
-    margin-top: 1700px;
+    margin-top: 2150px;
   }
 
   .container .wrapper .characterInfo .skills .skillInfo {
@@ -444,7 +445,8 @@ body {
     font-size: 14px;
     text-transform: capitalize;
     margin-inline: 0.5rem;
-    margin-top: 2000px;
+    margin-top: 2400px;
+    overflow: visible;
   }
 
   .container .wrapper .characterInfo .skills .skillInfo h3 {
@@ -462,6 +464,6 @@ body {
     font-weight: 500;
     margin-top: 1rem;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    padding-bottom: 2em;
   }
 }

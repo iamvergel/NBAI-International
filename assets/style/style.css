@@ -272,6 +272,20 @@ body {
   mix-blend-mode: lighten;
 }
 
+.bday {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.ryan {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+}
+
 @media only screen and (max-width: 576px) {
   .loader {
     width: 100%;
@@ -306,5 +320,18 @@ body {
 
   .ent:hover:after {
     width: 148px;
+  }
+
+  .bday {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
+  .ryan {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    height: 300px;
+    width: auto;
   }
 }

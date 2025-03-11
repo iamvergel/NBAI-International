@@ -555,10 +555,12 @@ body {
 
   .heroBriefbackground {
     position: absolute;
-    top: 59%;
+    top: 38%;
     left: 0%;
     font-size: 10px;
-    padding-inline: 20px;
+    padding-inline: 30px;
+    padding-block: 5px;
+    background-color: #00000052;
   }
 
   .name {

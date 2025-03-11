@@ -265,11 +265,28 @@ body {
   background-color: #000;
 }
 
+.background::after {
+  content: "vfgdfvdsv ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -1;
+}
+
 .backgroundvideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   mix-blend-mode: lighten;
+  filter: grayscale(100%);
+  position: relative;
+  z-index: -1;
 }
 
 .bday {

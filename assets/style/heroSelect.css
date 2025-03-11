@@ -108,6 +108,14 @@ body {
   animation: changecolor 1s 0.5s linear infinite alternate-reverse;
 }
 
+.heroBriefbackground {
+  position: absolute;
+  top: 68%;
+  left: 5%;
+  font-size: 12px;
+  color: #fff;
+}
+
 @keyframes changecolor {
   0% {
     color: #c9082a;
@@ -124,8 +132,15 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 30px;
+  grid-gap: 20px;
   user-select: none;
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  padding: 0.5rem;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 .heroes span {
@@ -140,7 +155,7 @@ body {
 }
 
 .heroes span:hover {
-  transform: scale(1.1);
+  transform: scale(1.030);
   box-shadow: 0 0 5px 0 #fff;
   border: solid 2px #fff;
 }
@@ -203,6 +218,21 @@ body {
 .heroes span:nth-child(15) {
   background-image: url("../../assets/image/characters/character015/jeco.jpg");
 }
+.heroes span:nth-child(16) {
+  background-image: url("../../assets/image/characters/character016/gelo.jpg");
+}
+.heroes span:nth-child(17) {
+  background-image: url("../../assets/image/characters/character017/tian.jpg");
+}
+.heroes span:nth-child(18) {
+  background-image: url("../../assets/image/characters/character018/erik.jpg");
+}
+.heroes span:nth-child(19) {
+  background-image: url("../../assets/image/characters/character019/jus.jpg");
+}
+.heroes span:nth-child(20) {
+  background-image: url("../../assets/image/logo/logonibai01.png");
+}
 
 .heroCharacter {
   width: 50%;
@@ -221,13 +251,17 @@ body {
 }
 
 .hero {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   opacity: 1;
   background-size: cover;
   z-index: 1;
   position: absolute;
   bottom: 0;
+}
+
+.hero:nth-child(19) {
+  width: 500px;
 }
 
 .hero.fade-in {
@@ -428,6 +462,8 @@ body {
     overflow-y: hidden;
     white-space: nowrap;
     overflow: none;
+    border: none;
+    padding: 0;
   }
 
   .heroes span {
@@ -515,6 +551,14 @@ body {
     top: 68%;
     left: 50%;
     text-align: center;
+  }
+
+  .heroBriefbackground {
+    position: absolute;
+    top: 59%;
+    left: 0%;
+    font-size: 10px;
+    padding-inline: 20px;
   }
 
   .name {

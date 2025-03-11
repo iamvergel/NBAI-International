@@ -85,6 +85,11 @@ let ryan001 = document.querySelector(".heroes span:nth-of-type(12)");
 let charlie001 = document.querySelector(".heroes span:nth-of-type(13)");
 let vergel001 = document.querySelector(".heroes span:nth-of-type(14)");
 let jeco001 = document.querySelector(".heroes span:nth-of-type(15)");
+let gelo001 = document.querySelector(".heroes span:nth-of-type(16)");
+let tian001 = document.querySelector(".heroes span:nth-of-type(17)");
+let erik001 = document.querySelector(".heroes span:nth-of-type(18)");
+let jus001 = document.querySelector(".heroes span:nth-of-type(19)");
+
 
 function largeScreen() {
   if (window.innerWidth >= 992) {
@@ -250,6 +255,7 @@ let roleContainer = document.querySelector(".roleContainer");
 let role = document.querySelector(".role");
 let effects = document.querySelector(".effects");
 let heroBackground = document.querySelector(".heroBackground");
+let heroBriefbackground = document.querySelector(".heroBriefbackground");
 
 select.addEventListener("click", () => {
   if (heroname.innerHTML === "JOEMEL") {
@@ -320,6 +326,8 @@ joemel001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Joemel : The Eternal Hashira - one of the deadliest Hashira, Joemel lived over five thousand years ago. He was a master of Stone Hardening and Foil Breathing techniques, <br/> wielding them with unmatched skill. Above all, Joemel was also an Imaginary Trapper, a skill he acquired from his friend, Sivergel, who taught him this unique ability."';
+
   role.innerHTML = "fighter / tank";
   role.style.opacity = "1";
 });
@@ -329,6 +337,7 @@ joemel001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 jim001.addEventListener("mouseenter", () => {
@@ -344,6 +353,8 @@ jim001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Jimwell : The Modern Hashira - In the present day, Jimwell stands as one of the most essential Hashira, renowned not for his offensive prowess but for his unparalleled support <br/> capabilities. From a young age, Jimwell displayed a natural affinity for the  Water Breathing Technique."';
+
   role.innerHTML = "support";
   role.style.opacity = "1";
 });
@@ -353,6 +364,7 @@ jim001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 gab001.addEventListener("mouseenter", () => {
@@ -368,6 +380,8 @@ gab001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Gabryelle : The Last Rock Bender - he is a rock bender who has the power to create a rock wall that can protect her from any attack. <br/>he is also a master of the Water Breathing Technique, the Fire Breathing Technique and the Bright Stone Hardening Technique."';
+
   role.innerHTML = "tank / support";
   role.style.opacity = "1";
 });
@@ -377,6 +391,7 @@ gab001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 maykel001.addEventListener("mouseenter", () => {
@@ -392,6 +407,8 @@ maykel001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Michael : the 7th Genggeng Slayer who is a legendary marksman"';
+
   role.innerHTML = "marksman";
   role.style.opacity = "1";
 });
@@ -401,6 +418,7 @@ maykel001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 marvin001.addEventListener("mouseenter", () => {
@@ -416,6 +434,8 @@ marvin001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Marvin : The Assasin who save the Modern Hashira Jimwel"';
+
   role.innerHTML = "assasin";
   role.style.opacity = "1";
 });
@@ -425,6 +445,7 @@ marvin001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 ronald001.addEventListener("mouseenter", () => {
@@ -440,6 +461,8 @@ ronald001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Ronald : The Street Fighter who is a legendary fighter with Chou and lapu-lapu of mobile legend"';
+
   role.innerHTML = "fighter";
   role.style.opacity = "1";
 });
@@ -449,6 +472,7 @@ ronald001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 edward001.addEventListener("mouseenter", () => {
@@ -584,6 +608,8 @@ ryan001.addEventListener("mouseenter", () => {
 
   roleContainer.style.backgroundColor = "white";
 
+  heroBriefbackground.innerHTML = '"Ryan : One of the legendary Hashira, is the king of all wolves, feared for his unmatched combat skills and mastery of stealth. A formidable fighter,<br/> he excels in both battle and evasion, often disappearing into the shadows when needed.<br/> He is rarely seen, but when he does appear, its usually in a strategic position, ready to strike when the time is right."';
+
   role.innerHTML = "tank / fighter";
   role.style.opacity = "1";
 });
@@ -593,6 +619,7 @@ ryan001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 charlie001.addEventListener("mouseenter", () => {
@@ -666,6 +693,109 @@ jeco001.addEventListener("mouseleave", () => {
   role.style.opacity = "0";
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
+});
+
+gelo001.addEventListener("mouseenter", () => {
+  heroname.innerHTML = "gelo";
+  heroname.style.opacity = "1";
+
+  effects.style.backgroundImage =
+    "url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDFzYzk1bm05ZGV5N3F3MGRrMWxjbnptM29sNGg5aXQzOXg5eWZldCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dB66K4Kywc8gPVh6A7/giphy.gif')";
+  effects.style.opacity = "1";
+
+  heroBackground.style.backgroundImage =
+    "url('../../assets/image/background_image/gelobg.jpeg')";
+  heroBackground.style.opacity = "0.9";
+
+  roleContainer.style.backgroundColor = "white";
+
+  role.innerHTML = "support / tank";
+  role.style.opacity = "1";
+});
+gelo001.addEventListener("mouseleave", () => {
+  heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
+  role.style.opacity = "0";
+  effects.style.backgroundImage = "";
+  heroBackground.style.opacity = "0";
+});
+
+tian001.addEventListener("mouseenter", () => {
+  heroname.innerHTML = "Cristian";
+  heroname.style.opacity = "1";
+
+  effects.style.backgroundImage =
+    "url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2VqazA1ejI1M2U1NWh5aG9wbjB1a3J6dzM2eWJ5bjJyNTlzdmpuOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0JXhP33IC7yynHz7yI/giphy.gif')";
+  effects.style.opacity = "1";
+
+  heroBackground.style.backgroundImage =
+    "url('../../assets/image/background_image/tianbg.jpg')";
+  heroBackground.style.opacity = "0.9";
+
+  roleContainer.style.backgroundColor = "white";
+
+  role.innerHTML = "assasin";
+  role.style.opacity = "1";
+});
+tian001.addEventListener("mouseleave", () => {
+  heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
+  role.style.opacity = "0";
+  effects.style.backgroundImage = "";
+  heroBackground.style.opacity = "0";
+});
+
+erik001.addEventListener("mouseenter", () => {
+  heroname.innerHTML = "Erick";
+  heroname.style.opacity = "1";
+
+  effects.style.backgroundImage =
+    "url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTl1dHcxNjIzaGNxcGx5Zjd5NDgzdzNlZ2JrdHFubHkxbTdkeHR5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2Cy90VMhfoA9BC/giphy.gif')";
+  effects.style.opacity = "1";
+
+  heroBackground.style.backgroundImage =
+    "url('../../assets/image/background_image/erikbg.jpeg')";
+  heroBackground.style.opacity = "0.9";
+
+  roleContainer.style.backgroundColor = "white";
+
+  role.innerHTML = "Mage / Fighter";
+  role.style.opacity = "1";
+});
+erik001.addEventListener("mouseleave", () => {
+  heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
+  role.style.opacity = "0";
+  effects.style.backgroundImage = "";
+  heroBackground.style.opacity = "0";
+});
+
+jus001.addEventListener("mouseenter", () => {
+  heroname.innerHTML = "Justine";
+  heroname.style.opacity = "1";
+
+  effects.style.backgroundImage =
+    "url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHZhZjJrN2huYTYzNXNrejU1cGY4Y2N6dXRwcXltNGNyNzR1Nm9seiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iMBEwpRodEBlpuTyVD/giphy.gif')";
+  effects.style.opacity = "1";
+
+  heroBackground.style.backgroundImage =
+    "url('../../assets/image/background_image/justbg.jpg')";
+  heroBackground.style.opacity = "0.9";
+
+  roleContainer.style.backgroundColor = "white";
+
+  heroBriefbackground.innerHTML = '"Justine : the King of the Knights of the Round Table, is a legendary tank and support, known for his unshakable strength in battle. He once trained alongside his closest friends, <br/> Erick and Cristian, forging an unbreakable bond. Though time has separated them, his dedication to protect and the memories of their friendship continue to drive him forward.';
+
+  role.innerHTML = "tank / support";
+  role.style.opacity = "1";
+});
+jus001.addEventListener("mouseleave", () => {
+  heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
+  role.style.opacity = "0";
+  effects.style.backgroundImage = "";
+  heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
 });
 
 function enterEffect() {

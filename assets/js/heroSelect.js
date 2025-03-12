@@ -89,7 +89,7 @@ let gelo001 = document.querySelector(".heroes span:nth-of-type(16)");
 let tian001 = document.querySelector(".heroes span:nth-of-type(17)");
 let erik001 = document.querySelector(".heroes span:nth-of-type(18)");
 let jus001 = document.querySelector(".heroes span:nth-of-type(19)");
-
+let jm001 = document.querySelector(".heroes span:nth-of-type(20)");
 
 function largeScreen() {
   if (window.innerWidth >= 992) {
@@ -796,6 +796,36 @@ jus001.addEventListener("mouseleave", () => {
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
   heroBriefbackground.innerHTML = "";
+});
+
+jm001.addEventListener("mouseenter", () => {
+  heroname.innerHTML = "JM";
+  heroname.style.opacity = "1";
+
+  effects.style.backgroundImage =
+    "url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29ndHE2ejQyd3U4eDB4a3ZnMTAxOTZzN3JrYXYxbjZiNG05OTdueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IfxBjGrbIK3vwkODkA/giphy.gif')";
+  effects.style.opacity = "1";
+
+  heroBackground.style.backgroundImage =
+    "url('../../assets/image/background_image/jmbg.jpg')";
+  heroBackground.style.opacity = "0.9";
+  heroBackground.style.filter = "grayscale(70%)";
+
+  roleContainer.style.backgroundColor = "white";
+
+  heroBriefbackground.innerHTML = '"Jm : The Legendary Card Man in the Land of Peru-peru"';
+
+  role.innerHTML = "Mage";
+  role.style.opacity = "1";
+});
+jm001.addEventListener("mouseleave", () => {
+  heroname.style.opacity = "0";
+  roleContainer.style.backgroundColor = "";
+  role.style.opacity = "0";
+  effects.style.backgroundImage = "";
+  heroBackground.style.opacity = "0";
+  heroBriefbackground.innerHTML = "";
+  heroBackground.style.filter = "none";
 });
 
 function enterEffect() {

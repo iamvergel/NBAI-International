@@ -231,6 +231,9 @@ body {
   background-image: url("../../assets/image/characters/character019/jus.jpg");
 }
 .heroes span:nth-child(20) {
+  background-image: url("../../assets/image/characters/character020/jm.jpg");
+}
+.heroes span:nth-child(21) {
   background-image: url("../../assets/image/logo/logonibai01.png");
 }
 

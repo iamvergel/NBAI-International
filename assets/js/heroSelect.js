@@ -254,8 +254,14 @@ let heroname = document.querySelector(".name");
 let roleContainer = document.querySelector(".roleContainer");
 let role = document.querySelector(".role");
 let effects = document.querySelector(".effects");
+let jimbg = document.querySelector(".jimbg");
 let heroBackground = document.querySelector(".heroBackground");
 let heroBriefbackground = document.querySelector(".heroBriefbackground");
+let joemelWeapon = document.querySelector('.joemelWeapon');
+let gabWeapon = document.querySelector('.gabWeapon');
+let maykelWeapon = document.querySelector('.maykelWeapon');
+let maykelWeaponOne = document.querySelector('.maykelWeaponOne');
+let maykelWeaponTwo = document.querySelector('.maykelWeaponTwo');
 
 select.addEventListener("click", () => {
   if (heroname.innerHTML === "JOEMEL") {
@@ -320,6 +326,9 @@ joemel001.addEventListener("mouseenter", () => {
   effects.style.backgroundImage =
     "url('https://i.pinimg.com/originals/ef/5e/4b/ef5e4b4d024c66b42311e337ae8ab4cc.gif')";
 
+  joemelWeapon.style.backgroundImage =
+    "url('../../assets/image/characters/character001/joemel_weapon.png')";
+
   heroBackground.style.backgroundImage =
     "url('../../assets/image/background_image/joemelbg.jpg')";
   heroBackground.style.opacity = "0.5";
@@ -338,6 +347,7 @@ joemel001.addEventListener("mouseleave", () => {
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
   heroBriefbackground.innerHTML = "";
+  joemelWeapon.style.backgroundImage = "";
 });
 
 jim001.addEventListener("mouseenter", () => {
@@ -346,6 +356,9 @@ jim001.addEventListener("mouseenter", () => {
 
   effects.style.backgroundImage =
     "url('https://cdn.dribbble.com/users/652916/screenshots/2033857/media/d3b47e7e94f6dc54fb1f4d2680298dd8.gif')";
+
+  jimbg.style.backgroundImage =
+    "url('https://i.pinimg.com/originals/f5/dc/b2/f5dcb20b8e25a547dcbfbe33bbf78c5e.gif')";
 
   heroBackground.style.backgroundImage =
     "url('../../assets/image/background_image/jimbg.jpg')";
@@ -365,6 +378,7 @@ jim001.addEventListener("mouseleave", () => {
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
   heroBriefbackground.innerHTML = "";
+  jimbg.style.backgroundImage = "";
 });
 
 gab001.addEventListener("mouseenter", () => {
@@ -373,6 +387,9 @@ gab001.addEventListener("mouseenter", () => {
 
   effects.style.backgroundImage =
     "url('https://media.giphy.com/media/i8tcyIgDxnSvK/giphy.gif')";
+
+  gabWeapon.style.backgroundImage =
+    "url('../../assets/image/characters/character003/gab_weapon.png')";
 
   heroBackground.style.backgroundImage =
     "url('../../assets/image/background_image/gabbg.jpg')";
@@ -392,6 +409,7 @@ gab001.addEventListener("mouseleave", () => {
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
   heroBriefbackground.innerHTML = "";
+  gabWeapon.style.backgroundImage = "";
 });
 
 maykel001.addEventListener("mouseenter", () => {
@@ -400,6 +418,15 @@ maykel001.addEventListener("mouseenter", () => {
 
   effects.style.backgroundImage =
     "url('https://3.bp.blogspot.com/-NaFg_MVKDEM/UnUJxowVYYI/AAAAAAAAHE0/nZ8-GHHLobE/s1600/Animation.gif')";
+
+  maykelWeapon.style.backgroundImage =
+    "url('../../assets/image/characters/character004/maykel_weapon2.png')";
+
+    maykelWeaponOne.style.backgroundImage =
+    "url('../../assets/image/characters/character004/maykel_weapon.png')";
+
+    maykelWeaponTwo.style.backgroundImage =
+    "url('../../assets/image/characters/character004/maykel_weapon.png')";
 
   heroBackground.style.backgroundImage =
     "url('../../assets/image/background_image/maykelbg.jpg')";
@@ -419,6 +446,9 @@ maykel001.addEventListener("mouseleave", () => {
   effects.style.backgroundImage = "";
   heroBackground.style.opacity = "0";
   heroBriefbackground.innerHTML = "";
+  maykelWeapon.style.backgroundImage = "";
+  maykelWeaponOne.style.backgroundImage = "";
+  maykelWeaponTwo.style.backgroundImage = "";
 });
 
 marvin001.addEventListener("mouseenter", () => {

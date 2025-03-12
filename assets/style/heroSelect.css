@@ -331,6 +331,138 @@ body {
   opacity: 1;
 }
 
+.jimbg {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.joemelWeapon {
+  width: 30%;
+  height: 90%;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  object-fit: cover;
+  opacity: 1;
+  transform: rotate(30deg);
+  animation: weaponGlow 3s infinite alternate-reverse;
+}
+
+@keyframes weaponGlow {
+  0% {
+    filter: drop-shadow(0 0 10px red) drop-shadow(0 0 20px red);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px yellow) drop-shadow(0 0 20px yellow);
+  }
+}
+
+.gabWeapon {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  object-fit: cover;
+  opacity: 1;
+  transform: rotate(15deg);
+  animation: weaponGab 3s infinite alternate-reverse;
+}
+
+@keyframes weaponGab {
+  0% {
+    filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px yellow) drop-shadow(0 0 20px yellow);
+  }
+}
+
+.maykelWeapon {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  object-fit: cover;
+  opacity: 1;
+  transform: rotate(300deg);
+  animation: weaponMaykel 3s infinite alternate-reverse;
+}
+
+@keyframes weaponMaykel {
+  0% {
+    filter: drop-shadow(0 0 5px black) drop-shadow(0 0 10px black);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 10px white);
+  }
+}
+
+.maykelWeaponOne {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 55%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 5;
+  animation: weaponMaykelOne 3s infinite;
+}
+
+.maykelWeaponTwo {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 55%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 5;
+  animation: weaponMaykelOne 3s infinite;
+}
+
+@keyframes weaponMaykelOne {
+  0% {
+    filter: drop-shadow(0 0 5px black) drop-shadow(0 0 10px black);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #580c0c) drop-shadow(0 0 10px #580c0c);
+    transform: rotate(360deg);
+  }
+}
+
 .heroBackground {
   position: absolute;
   top: 0;
@@ -626,5 +758,98 @@ body {
     opacity: 0;
     transition: opacity 0.1s;
     pointer-events: none;
+  }
+
+  .jimbg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  .joemelWeapon {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    object-fit: cover;
+    opacity: 1;
+    transform: rotate(30deg);
+  }
+  
+  .gabWeapon {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    object-fit: cover;
+    opacity: 1;
+    transform: rotate(15deg);
+    animation: weaponGab 3s infinite alternate-reverse;
+  }
+  
+  .maykelWeapon {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    object-fit: cover;
+    opacity: 1;
+    transform: rotate(310deg);
+    animation: weaponMaykel 3s infinite alternate-reverse;
+  }
+
+  .maykelWeaponOne {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 5;
+    animation: weaponMaykelOne 3s infinite;
+  }
+  
+  .maykelWeaponTwo {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 5;
+    animation: weaponMaykelOne 3s infinite;
   }
 }
